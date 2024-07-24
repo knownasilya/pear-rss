@@ -1,19 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Prss</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     {{content-for "head"}}
 
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/prss.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css" />
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/prss.css" />
+
+    <style>
+      pear-ctrl[data-platform="darwin"] {
+        margin-top: 18px;
+        margin-left: 12px;
+      }
+    </style>
 
     {{content-for "head-footer"}}
   </head>
   <body>
+    <div id="bar"><pear-ctrl></pear-ctrl></div>
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>

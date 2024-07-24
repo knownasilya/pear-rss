@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ilya Radchenko",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.58.26",
+    "@effect/platform-node": "^0.53.25",
+    "@effect/rpc": "^0.31.26",
+    "@effect/rpc-http": "^0.29.26",
+    "@effect/schema": "^0.68.22",
+    "effect": "^3.5.2"
+  }
+}
